@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject Camera;
     public float fbMovementSpeed;
     public float sidewaysMovementSpeed;
-    private float mouseSensitivity = 10f;
+    private float mouseSensitivity = 2f;
     private Vector3 fbForceVector;
     private Vector3 sidewaysForceVector;
     private Vector3 walkingForceVector;
@@ -33,10 +33,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {   
         float yRotation = Input.GetAxis("Mouse X");
-        float xRotation = -Input.mousePosition.y/Screen.height*90;
+        float xRotation = Input.GetAxis("Mouse Y");
 
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        Camera.transform.localEulerAngles = new Vector3(xRotation, 0f, 0f);
+        Camera.transform.Rotate(xRotation * mouseSensitivity * Vector3.left);
         gameObject.transform.Rotate(yRotation * mouseSensitivity * Vector3.up);
 
 
