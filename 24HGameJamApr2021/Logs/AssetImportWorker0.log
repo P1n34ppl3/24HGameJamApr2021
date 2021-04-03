@@ -83,3 +83,11 @@ Received Import Request.
 Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6984b5b08a6201fe78b01a3615bc1ac7') in 0.007115 seconds
   Import took 0.008917 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 553.180108 seconds.
+  path: Assets/TreeWack.fbx
+  artifactKey: Guid(28f3cdab084febe4caeee25bf989a4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TreeWack.fbx using Guid(28f3cdab084febe4caeee25bf989a4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00d599df0584a4ffe7002f109309af1') in 0.331359 seconds
+  Import took 0.333686 seconds .
+
