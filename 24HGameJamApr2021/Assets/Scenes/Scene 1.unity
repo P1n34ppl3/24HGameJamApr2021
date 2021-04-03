@@ -683,8 +683,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Startscreen: {fileID: 796092843}
   InGame: {fileID: 273793302}
-  always: {fileID: 0}
-  player: {fileID: 0}
+  always: {fileID: 834610921}
+  player: {fileID: 1866618502}
   playerMovement: {fileID: 0}
   score: {fileID: 0}
 --- !u!1 &459044648
