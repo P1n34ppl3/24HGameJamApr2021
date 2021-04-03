@@ -16571,6 +16571,8 @@ GameObject:
   - component: {fileID: 1866618505}
   - component: {fileID: 1866618504}
   - component: {fileID: 1866618503}
+  - component: {fileID: 1866618507}
+  - component: {fileID: 1866618508}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -16656,6 +16658,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1866618507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866618502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951d21c2d5553f48bea6de070c97481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  Camera: {fileID: 0}
+  fbMovementSpeed: 100
+  sidewaysMovementSpeed: 100
+--- !u!54 &1866618508
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866618502}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0.5
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1926870060
 GameObject:
   m_ObjectHideFlags: 0
