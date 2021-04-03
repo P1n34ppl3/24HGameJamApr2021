@@ -195,3 +195,115 @@ System memory in use after: 65.4 MB.
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 1720.
 Total: 6.705700 ms (FindLiveObjects: 0.432400 ms CreateObjectMapping: 0.084400 ms MarkObjects: 4.682700 ms  DeleteObjects: 1.502600 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002193 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.035 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1266 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.2 MB.
+System memory in use after: 65.4 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 1723.
+Total: 5.973600 ms (FindLiveObjects: 0.255500 ms CreateObjectMapping: 0.070200 ms MarkObjects: 4.358300 ms  DeleteObjects: 1.286200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 847.585306 seconds.
+  path: Assets/Guillotine.fbx
+  artifactKey: Guid(e311fe49853cde141aa126a562d998ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guillotine.fbx using Guid(e311fe49853cde141aa126a562d998ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6bcb4d19ecb1a7a3c8272270271ebb') in 0.480233 seconds
+  Import took 0.485212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000528 seconds.
+  path: Assets/Market stand v1.fbx
+  artifactKey: Guid(d0b4df2a090d8b54a9a1d131ec7d3b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Market stand v1.fbx using Guid(d0b4df2a090d8b54a9a1d131ec7d3b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f8ab4051b6d8854f30bda7e7b6a9982') in 0.222745 seconds
+  Import took 0.229752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000616 seconds.
+  path: Assets/Guillotine.fbx
+  artifactKey: Guid(e311fe49853cde141aa126a562d998ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guillotine.fbx using Guid(e311fe49853cde141aa126a562d998ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6bcb4d19ecb1a7a3c8272270271ebb') in 0.092877 seconds
+  Import took 0.097226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000521 seconds.
+  path: Assets/Market stand v2.fbx
+  artifactKey: Guid(74594ca9ee1cf6e4dae8ae116ac8e3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Market stand v2.fbx using Guid(74594ca9ee1cf6e4dae8ae116ac8e3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1b1a04c84e55c6e91d7562e6cfe0b2') in 0.183407 seconds
+  Import took 0.188151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.258261 seconds.
+  path: Assets/Presets
+  artifactKey: Guid(3445a54f8828e8a44abcf93f617aa256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets using Guid(3445a54f8828e8a44abcf93f617aa256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407291712dfc8a4e9abb756e657bde91') in 0.041980 seconds
+  Import took 0.059540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.685115 seconds.
+  path: Assets/Presets/FireballGlobal.prefab
+  artifactKey: Guid(9da78f8715be51a43af9a974feda0097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/FireballGlobal.prefab using Guid(9da78f8715be51a43af9a974feda0097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed1eee8a12f143f69a8e35676fd8a584') in 0.356604 seconds
+  Import took 0.367253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.866556 seconds.
+  path: Assets/Presets/Player.prefab
+  artifactKey: Guid(1d18e90a2b133c447aaad748438b7184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Player.prefab using Guid(1d18e90a2b133c447aaad748438b7184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1e56e8b89ae3930031a70b3b10919d') in 0.267345 seconds
+  Import took 0.298260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.716943 seconds.
+  path: Assets/Presets/FireballGlobal.prefab
+  artifactKey: Guid(9da78f8715be51a43af9a974feda0097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/FireballGlobal.prefab using Guid(9da78f8715be51a43af9a974feda0097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0f89d41f413fcd7819564da05251e8') in 0.286756 seconds
+  Import took 0.312732 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001675 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.243 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1266 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.9 MB.
+System memory in use after: 69.1 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 1770.
+Total: 5.083300 ms (FindLiveObjects: 0.287200 ms CreateObjectMapping: 0.072000 ms MarkObjects: 3.028000 ms  DeleteObjects: 1.692800 ms)
+
