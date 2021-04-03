@@ -7,12 +7,17 @@ public class Menu : MonoBehaviour
 {
     public GameObject Startscreen;
     public GameObject InGame;
+    public GameObject always;
     public GameObject player;
     public PlayerMovement playerMovement;
+    public Score score;
 
 
     void Start()
     {   
+        always = GameObject.Find("Always");
+        score = player.GetComponent<Score>();
+
         Startscreen = GameObject.Find("Menu");
         Startscreen.SetActive(true);
 
@@ -28,6 +33,7 @@ public class Menu : MonoBehaviour
         Startscreen.SetActive(false);
         InGame.SetActive(true);
         playerMovement.enabled = true;
+        score.ResetScore();
     }
     public void Death()
     {

@@ -16,12 +16,12 @@ public class Score : MonoBehaviour
         }
     }
 
-    void IncrementScore()
+    public void IncrementScore()
     {
         CurrentScore += 1;
     }
 
-    void ResetScore()
+    public void ResetScore()
     {
         CurrentScore = 0;
     }
