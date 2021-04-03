@@ -11,12 +11,13 @@ public class EnemyMove : MonoBehaviour
 
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         Aim();
     }
 
     void Update()
     {
-
+        rb.velocity = transform.forward * Speed;
     }
 
     void Aim()
