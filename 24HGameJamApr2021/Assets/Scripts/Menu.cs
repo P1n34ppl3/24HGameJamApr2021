@@ -15,16 +15,12 @@ public class Menu : MonoBehaviour
 
     void Start()
     {   
-        always = GameObject.Find("Always");
-        score = player.GetComponent<Score>();
+        score = always.GetComponent<Score>();
 
-        Startscreen = GameObject.Find("Menu");
         Startscreen.SetActive(true);
 
-        InGame = GameObject.Find("InGame");
         InGame.SetActive(false);  
 
-        player = GameObject.Find("Player");
         playerMovement = player.GetComponent<PlayerMovement>();
         playerMovement.enabled = false;
     }
