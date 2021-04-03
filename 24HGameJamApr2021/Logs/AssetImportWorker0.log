@@ -83,3 +83,4 @@ Received Import Request.
 Start importing Assets/TreeWack.fbx using Guid(28f3cdab084febe4caeee25bf989a4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40852e76a2ada7a5b7f259a5016d88a1') in 0.751881 seconds
   Import took 0.755744 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
