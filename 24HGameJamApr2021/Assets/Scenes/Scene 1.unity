@@ -11411,6 +11411,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6417f2faae0475242a7dfaafdc14a3f5, type: 3}
   m_PrefabInstance: {fileID: 18376810}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1685600852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685600851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f271b76acaf224db4968aa02b8c6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 10
+  Spawnrate: 5
+  target: {fileID: 1866618506}
 --- !u!122 &1685600855
 Halo:
   m_ObjectHideFlags: 0
@@ -11948,8 +11963,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   Camera: {fileID: 0}
-  fbMovementSpeed: 100
-  sidewaysMovementSpeed: 100
+  fbMovementSpeed: 10000
+  sidewaysMovementSpeed: 10000
 --- !u!54 &1866618508
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11959,8 +11974,8 @@ Rigidbody:
   m_GameObject: {fileID: 1866618502}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 0.05
+  m_Drag: 10
+  m_AngularDrag: 1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
