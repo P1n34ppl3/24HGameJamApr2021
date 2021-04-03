@@ -13,8 +13,12 @@ public class Menu : MonoBehaviour
 
     void Start()
     {   
+        Startscreen = GameObject.Find("Menu");
         Startscreen.SetActive(true);
-        InGame.SetActive(false);
+
+        InGame = GameObject.Find("InGame");
+        InGame.SetActive(false);  
+
         player = GameObject.Find("Player");
         playerMovement = player.GetComponent<PlayerMovement>();
         playerMovement.enabled = false;
