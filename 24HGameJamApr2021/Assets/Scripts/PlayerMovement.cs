@@ -17,8 +17,19 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        Camera = GameObject.Find("Main Camera");
+    }
+
+    void OnEnable()
+    {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    void OnDisable()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     void Update()
@@ -45,7 +56,6 @@ public class PlayerMovement : MonoBehaviour
         sidewaysForceVector = new Vector3(Cosinus * sidewaysMovement * sidewaysMovementSpeed * Time.deltaTime, 0, -Sinus * sidewaysMovement * sidewaysMovementSpeed * Time.deltaTime);
         
         walkingForceVector = fbForceVector + sidewaysForceVector; 
-        Debug.Log(sidewaysForceVector);
         rb.AddForce(walkingForceVector);
     }
 }
