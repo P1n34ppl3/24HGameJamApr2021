@@ -8,11 +8,14 @@ public class EnemyMove : MonoBehaviour
     public float Spawnrate = 5f;
     public Transform target;
     private Rigidbody rb;
-
+    float OffsettX; 
+    float OffsettZ; 
     void Start()
     {
+        OffsettX = Random.Range(-10.0f, 10.0f);
+        OffsettZ = Random.Range(-10.0f, 10.0f);
         rb = GetComponent<Rigidbody>();
-        Aim();
+        Invoke("Aim",2);
     }
 
     void Update()
@@ -24,6 +27,8 @@ public class EnemyMove : MonoBehaviour
     {
         var lookPos = target.position - transform.position;
         lookPos.y = 0;
+        lookPos.z = lookPos.z + OffsettZ;
+        lookPos.x = lookPos.x + OffsettX;
         var rotation = Quaternion.LookRotation(lookPos);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 1);
     }
