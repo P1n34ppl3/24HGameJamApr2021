@@ -25,11 +25,11 @@ public class EnemySpawning : MonoBehaviour
         enemiesSpawned = 0;
         timeUntillNextSpawn = Convert.ToSingle(startTimer);
         gateProgression = 0;
-        SpawnEnemy();
     }
 
     void Update()
     {
+        print(timeUntillNextSpawn);
         if (timeUntillNextSpawn > 0)
         {
             timeUntillNextSpawn -= Time.deltaTime;

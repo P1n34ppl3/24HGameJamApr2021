@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletDeath: {fileID: 4921589552809820193, guid: f905f7f2cf06154488095a1b2e827057, type: 3}
   rb: {fileID: 5413882320899148762}
-  Speed: 7500
+  Speed: 30
 --- !u!1001 &5199378396181845109
 PrefabInstance:
   m_ObjectHideFlags: 0

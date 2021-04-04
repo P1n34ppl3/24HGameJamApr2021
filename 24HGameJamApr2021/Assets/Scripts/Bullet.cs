@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = transform.forward * Time.deltaTime * Speed;
+        rb.velocity = transform.forward * Speed;
     }
 
     public void OnTriggerEnter(Collider collider)
