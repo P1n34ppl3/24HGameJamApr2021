@@ -114,8 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   Camera: {fileID: 0}
-  fbMovementSpeed: 3500
-  sidewaysMovementSpeed: 3500
+  fbMovementSpeed: 2500
+  sidewaysMovementSpeed: 2500
 --- !u!54 &3042597561507432974
 Rigidbody:
   m_ObjectHideFlags: 0
