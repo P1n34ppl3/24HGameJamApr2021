@@ -30,6 +30,7 @@ public class EnemySpawning : MonoBehaviour
 
     void Update()
     {
+        print(timeUntillNextSpawn);
         if (timeUntillNextSpawn > 0)
         {
             timeUntillNextSpawn -= Time.deltaTime;
