@@ -7,6 +7,7 @@ public class EnemySpawning : MonoBehaviour
 {
     public double growthRate;
     public double startTimer;
+    public float spawnLimit;
     public GameObject EnemyPrefab;
     bool random;
     Vector3 position;
@@ -27,7 +28,6 @@ public class EnemySpawning : MonoBehaviour
         if (timeUntillNextSpawn > 0)
         {
             timeUntillNextSpawn -= Time.deltaTime;
-            print(Progression(enemiesSpawned));
         }
         else
         {
@@ -43,7 +43,14 @@ public class EnemySpawning : MonoBehaviour
     float Progression(int x)
     {
         double result = startTimer * Math.Pow(growthRate, -x);
-        return Convert.ToSingle(result);
+        if (result > spawnLimit)
+        {
+            return Convert.ToSingle(result);
+        }
+        else
+        {
+            return spawnLimit;
+        }
     }
 
     void SpawnEnemy()
@@ -61,19 +68,19 @@ public class EnemySpawning : MonoBehaviour
         switch (spawnPlace)
         {
             case 0:
-                position = new Vector3(0,5,-67);
+                position = new Vector3(0,5,-60);
                 yRotation = UnityEngine.Random.Range(-60, 60);
                 break;
             case 1:
-                position = new Vector3(0,5,67);
+                position = new Vector3(0,5,60);
                 yRotation = UnityEngine.Random.Range(120, 240);
                 break;
             case 2:
-                position = new Vector3(-67,5,0);
+                position = new Vector3(-60,5,0);
                 yRotation = UnityEngine.Random.Range(30, 150);
                 break;
             case 3:
-                position = new Vector3(67,5,0);
+                position = new Vector3(60,5,0);
                 yRotation = UnityEngine.Random.Range(-150, -30);
                 break;
         }
