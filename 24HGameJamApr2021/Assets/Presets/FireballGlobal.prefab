@@ -10111,7 +10111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f271b76acaf224db4968aa02b8c6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5000
+  Speed: 7500
   Spawnrate: 5
   Player: {fileID: 3042597561507432964, guid: 1d18e90a2b133c447aaad748438b7184, type: 3}
   canvas: {fileID: 0}
