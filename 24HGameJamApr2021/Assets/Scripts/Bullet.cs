@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private Rigidbody rb;
+    public Rigidbody rb;
     public float Speed = 10f;
 
     void Update()
     {
 
-        rb.velocity = transform.forward * Speed;
+        rb.velocity = transform.forward * Time.deltaTime * Speed;
     }
 
 }
