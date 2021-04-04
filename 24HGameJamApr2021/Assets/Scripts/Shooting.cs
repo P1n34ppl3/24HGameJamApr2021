@@ -14,10 +14,16 @@ public class Shooting : MonoBehaviour
     }
     void Trigger()
     {
-        Invoke("Shoot", ReloadTime);
+        if (Input.GetMouseButtonDown(0))
+        {
+            Invoke("Shoot", ReloadTime);
+        }
     }
     void Shoot()
     {
-        Instantiate(BulletPrefab, Player.position, Player.rotation);
+        Debug.Log("shoot");
+            Instantiate(BulletPrefab, Player.position, Player.rotation);
+        
+           
     }
 }
