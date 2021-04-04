@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    private Transform Player;
+    public Transform PPosition;
     public GameObject BulletPrefab;
     public float ReloadTime = 1f;
 
     void Update()
     {
-        Trigger();
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("shoot");
+            Debug.Log(PPosition.position);
+            Debug.Log(PPosition.rotation);
+
+            Instantiate(BulletPrefab, PPosition.position, PPosition.rotation);
+        }
     }
     void Trigger()
     {
@@ -22,7 +29,7 @@ public class Shooting : MonoBehaviour
     void Shoot()
     {
         Debug.Log("shoot");
-            Instantiate(BulletPrefab, Player.position, Player.rotation);
+            Instantiate(BulletPrefab, PPosition.position, PPosition.rotation);
         
            
     }

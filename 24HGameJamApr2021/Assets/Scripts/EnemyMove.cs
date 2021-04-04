@@ -24,7 +24,7 @@ public class EnemyMove : MonoBehaviour
     void Update()
     {
         
-        rb.velocity = transform.forward * Speed;
+        rb.velocity = transform.forward * Time.deltaTime * Speed;
     }
 
     void Aim()
