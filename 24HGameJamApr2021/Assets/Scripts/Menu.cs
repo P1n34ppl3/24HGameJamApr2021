@@ -13,6 +13,7 @@ public class Menu : MonoBehaviour
     public PlayerMovement playerMovement;
     public EnemySpawning enemySpawning;
     public Score score;
+    public static bool playerIsDead;
 
 
     void Start()
@@ -28,6 +29,16 @@ public class Menu : MonoBehaviour
 
         enemySpawning = enemySpawner.GetComponent<EnemySpawning>();
         enemySpawning.enabled = false;
+
+        playerIsDead = false;
+    }
+
+    void Update()
+    {
+        if (playerIsDead)
+        {
+            Death();
+        }
     }
     public void PlayGame()
     {
@@ -45,6 +56,8 @@ public class Menu : MonoBehaviour
 
         playerMovement.enabled = false;
         enemySpawning.enabled = false;
+
+        playerIsDead = false;
     }
     public void Quit()
     {

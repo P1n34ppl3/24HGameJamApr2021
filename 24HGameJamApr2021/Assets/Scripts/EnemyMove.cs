@@ -7,6 +7,8 @@ public class EnemyMove : MonoBehaviour
     public float Speed = 10f;
     public float Spawnrate = 5f;
     public GameObject Player;
+    public GameObject canvas;
+    public Menu menu;
     private Rigidbody rb;
     float OffsettX; 
     float OffsettZ; 
@@ -36,6 +38,16 @@ public class EnemyMove : MonoBehaviour
         lookPos.x = lookPos.x + OffsettX;
         var rotation = Quaternion.LookRotation(lookPos);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 1);
+    }
+
+    void OnCollisionEnter(Collision collider)
+    {
+        if (collider.gameObject.name == "Player")
+        {
+            //menu.Death();
+        }
+        Destroy(gameObject);
+
     }
     
 
