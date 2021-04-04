@@ -50,4 +50,10 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Horn
+    clip: {fileID: 8300000, guid: 763d6441c3faeb041a431c352a31b9fc, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   soundOn: 1
