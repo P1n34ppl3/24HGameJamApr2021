@@ -9,7 +9,7 @@ public class StageMenager : MonoBehaviour
 
     void Update()
     {
-        if (Score.CurrentScore == 0)
+        if (Score.CurrentScore == 1)
         {
 
             Stage1();
