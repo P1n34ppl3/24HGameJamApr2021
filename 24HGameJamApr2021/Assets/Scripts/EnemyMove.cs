@@ -32,7 +32,7 @@ public class EnemyMove : MonoBehaviour
         
         var lookPos = target.position - transform.position;
         lookPos.y = 0;
-        
+        lookPos.z = lookPos.z + OffsettZ;
         lookPos.x = lookPos.x + OffsettX;
         var rotation = Quaternion.LookRotation(lookPos);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 1);

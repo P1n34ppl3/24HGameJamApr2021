@@ -875,3 +875,51 @@ Received Import Request.
 Start importing Assets/Presets/Player.prefab using Guid(1d18e90a2b133c447aaad748438b7184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9edf6e25ea95e1781c362b4d157b2c62') in 0.298512 seconds
   Import took 0.331256 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002866 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.217 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1267 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.0 MB.
+System memory in use after: 69.2 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 1843.
+Total: 9.545800 ms (FindLiveObjects: 0.673200 ms CreateObjectMapping: 0.113400 ms MarkObjects: 5.976500 ms  DeleteObjects: 2.777500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002051 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.294 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1267 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.0 MB.
+System memory in use after: 69.2 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 1846.
+Total: 8.781300 ms (FindLiveObjects: 0.700000 ms CreateObjectMapping: 1.748000 ms MarkObjects: 4.881300 ms  DeleteObjects: 1.449000 ms)
+
