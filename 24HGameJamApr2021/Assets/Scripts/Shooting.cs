@@ -7,23 +7,20 @@ public class Shooting : MonoBehaviour
     public Transform PPosition;
     public GameObject BulletPrefab;
     public float ReloadTime = 1f;
+    int reload = 0;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) & reload == 0)
         {
             Instantiate(BulletPrefab, PPosition.position, PPosition.rotation);
-        }
-    }
-    void Trigger()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
+            reload = 1;
             Invoke("Shoot", ReloadTime);
         }
     }
+
     void Shoot()
     {
-        Instantiate(BulletPrefab, PPosition.position, PPosition.rotation);   
+        reload = 0;
     }
 }
