@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,10 +12,9 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI scoreText;
 
 
-    
     void Update()
     {
-        
+
         Debug.Log("check");
         highScoreText.text = HighScore.ToString();
         scoreText.text = CurrentScore.ToString();
@@ -24,7 +22,6 @@ public class Score : MonoBehaviour
         {
             HighScore = CurrentScore;
         }
-
-
     }
 }
+
