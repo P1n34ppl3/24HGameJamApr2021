@@ -50,9 +50,15 @@ public class EnemyMove : MonoBehaviour
         }
         if (collider.gameObject.tag != "Enemy")
         {
-            Destroy(gameObject);
+            DestroyObject();
         }
         
+    }
+
+    public void DestroyObject()
+    {
+        //Spawn deathenemyobject
+        Destroy(gameObject);
     }   
     
 }
