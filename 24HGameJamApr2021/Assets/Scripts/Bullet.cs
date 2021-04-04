@@ -7,7 +7,6 @@ public class Bullet : MonoBehaviour
     public Rigidbody rb;
     public float Speed = 10f;
 
-
     void Update()
     {
         rb.velocity = transform.forward * Time.deltaTime * Speed;
@@ -20,8 +19,10 @@ public class Bullet : MonoBehaviour
             Score.CurrentScore += 1;
             print(Score.CurrentScore);
             print("score goes up");
+            collider.GetComponent<EnemyMove>().DestroyObject();
+
         }
-        if (collider.gameObject.name != "Player" & collider.gameObject.name != "Enemy")
+        if (collider.gameObject.name != "Player") 
         {
             Destroy(gameObject);
         }
