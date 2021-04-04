@@ -9,17 +9,18 @@ public class EnemySpawning : MonoBehaviour
     public double startTimer;
     public float spawnLimit;
     public GameObject EnemyPrefab;
-    bool random;
     Vector3 position;
     float yRotation;
     float timeUntillNextSpawn;
     int enemiesSpawned = 0;
+    int spawnPlace;
+    int gateProgression;
 
     void OnEnable()
     {
         enemiesSpawned = 0;
         timeUntillNextSpawn = Convert.ToSingle(startTimer);
-        random = false;
+        gateProgression = 0;
         SpawnEnemy();
     }
 
@@ -34,10 +35,7 @@ public class EnemySpawning : MonoBehaviour
             SpawnEnemy();
             enemiesSpawned += 1;
             timeUntillNextSpawn = Progression(enemiesSpawned);
-            if (enemiesSpawned == 10)
-            {
-                random = true;
-            }
+            GateProgressor();
         }
     }
     float Progression(int x)
@@ -53,16 +51,38 @@ public class EnemySpawning : MonoBehaviour
         }
     }
 
+    void GateProgressor()
+    {
+        switch (enemiesSpawned)
+            {
+                case 10:
+                    enemiesSpawned = 1;
+                    break;
+                case 20:
+                    enemiesSpawned = 2;
+                    break;
+                case 30:
+                    enemiesSpawned = 3;
+                    break;
+            }
+    }
+
     void SpawnEnemy()
     {   
-        int spawnPlace;
-        if (random)
+        switch (gateProgression)
         {
-            spawnPlace = UnityEngine.Random.Range(0,4);
-        }
-        else
-        {
-            spawnPlace = 3;
+            case 0:
+                spawnPlace = 3;
+                break;
+            case 1:
+                spawnPlace = UnityEngine.Random.Range(2,4);
+                break;
+            case 2:
+                spawnPlace = UnityEngine.Random.Range(1,4);
+                break;
+            case 3:
+                spawnPlace = UnityEngine.Random.Range(0,4);
+                break;
         }
 
         switch (spawnPlace)
