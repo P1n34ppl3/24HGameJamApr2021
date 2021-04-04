@@ -61,19 +61,19 @@ public class EnemySpawning : MonoBehaviour
         switch (spawnPlace)
         {
             case 0:
-                position = new Vector3(0,8,-67);
+                position = new Vector3(0,5,-67);
                 yRotation = UnityEngine.Random.Range(-60, 60);
                 break;
             case 1:
-                position = new Vector3(0,8,67);
+                position = new Vector3(0,5,67);
                 yRotation = UnityEngine.Random.Range(120, 240);
                 break;
             case 2:
-                position = new Vector3(-67,8,0);
+                position = new Vector3(-67,5,0);
                 yRotation = UnityEngine.Random.Range(30, 150);
                 break;
             case 3:
-                position = new Vector3(67,8,0);
+                position = new Vector3(67,5,0);
                 yRotation = UnityEngine.Random.Range(-150, -30);
                 break;
         }
