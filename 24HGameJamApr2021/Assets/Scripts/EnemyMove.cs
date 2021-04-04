@@ -6,12 +6,13 @@ public class EnemyMove : MonoBehaviour
 {
     public float Speed = 10f;
     public float Spawnrate = 5f;
-    public Transform target;
+    public GameObject Player;
     private Rigidbody rb;
     float OffsettX; 
     float OffsettZ; 
     void Start()
     {
+        Player = GameObject.FindGameObjectWithTag("Player");
         OffsettX = Random.Range(-10.0f, 10.0f);
         OffsettZ = Random.Range(-10.0f, 10.0f);
         rb = GetComponent<Rigidbody>();
@@ -20,11 +21,15 @@ public class EnemyMove : MonoBehaviour
 
     void Update()
     {
+        
         rb.velocity = transform.forward * Speed;
     }
 
     void Aim()
     {
+        var target = Player.GetComponent<Transform>();
+        Debug.Log(target.position);
+        
         var lookPos = target.position - transform.position;
         lookPos.y = 0;
         
