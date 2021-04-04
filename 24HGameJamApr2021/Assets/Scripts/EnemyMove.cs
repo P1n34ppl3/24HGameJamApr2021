@@ -19,7 +19,7 @@ public class EnemyMove : MonoBehaviour
         OffsettX = Random.Range(-10.0f, 10.0f);
         OffsettZ = Random.Range(-10.0f, 10.0f);
         rb = GetComponent<Rigidbody>();
-        Invoke("Aim", AimSpeed);
+        Invoke("Aim", Random.Range(2/10f, 1f));
 
         canvas = GameObject.Find("Canvas");
         menu = canvas.GetComponent<Menu>();
