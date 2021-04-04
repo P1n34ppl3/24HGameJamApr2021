@@ -15,15 +15,5 @@ public class Score : MonoBehaviour
             HighScore = CurrentScore;
         }
     }
-
-    public void IncrementScore()
-    {
-        CurrentScore += 1;
-    }
-
-    public void ResetScore()
-    {
-        CurrentScore = 0;
-    }
 }
 

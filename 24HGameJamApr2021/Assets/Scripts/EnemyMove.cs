@@ -33,7 +33,6 @@ public class EnemyMove : MonoBehaviour
     void Aim()
     {
         var target = Player.GetComponent<Transform>();
-        Debug.Log(target.position);
         
         var lookPos = target.position - transform.position;
         lookPos.y = 0;

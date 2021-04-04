@@ -5,15 +5,8 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public Rigidbody rb;
-    public GameObject ui;
-    public Score score;
     public float Speed = 10f;
 
-    void Start()
-    {   
-        ui = GameObject.Find("Always");
-        score = ui.GetComponent<Score>();
-    }
 
     void Update()
     {
@@ -24,7 +17,9 @@ public class Bullet : MonoBehaviour
     {   
         if (collider.gameObject.tag == "Enemy")
         {
-            score.IncrementScore();
+            Score.CurrentScore += 1;
+            print(Score.CurrentScore);
+            print("score goes up");
         }
         if (collider.gameObject.name != "Player")
         {
