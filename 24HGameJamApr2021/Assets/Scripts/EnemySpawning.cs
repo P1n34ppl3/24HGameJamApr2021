@@ -60,13 +60,13 @@ public class EnemySpawning : MonoBehaviour
     {
         switch (enemiesSpawned)
             {
-                case 10:
+                case 20:
                     gateProgression = 1;
                     break;
-                case 20:
+                case 40:
                     gateProgression = 2;
                     break;
-                case 30:
+                case 60:
                     gateProgression = 3;
                     break;
             }
