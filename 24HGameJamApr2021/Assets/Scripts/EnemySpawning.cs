@@ -27,6 +27,13 @@ public class EnemySpawning : MonoBehaviour
         gateProgression = 0;
     }
 
+    void OnDisable()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach(GameObject enemy in enemies)
+        GameObject.Destroy(enemy);
+    }
+
     void Update()
     {
         print(timeUntillNextSpawn);
