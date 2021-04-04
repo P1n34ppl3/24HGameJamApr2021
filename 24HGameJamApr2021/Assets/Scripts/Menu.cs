@@ -13,6 +13,7 @@ public class Menu : MonoBehaviour
     public PlayerMovement playerMovement;
     public EnemySpawning enemySpawning;
     public  MovingScreen movingScreen;
+    public Shooting shooting;
     public Score score;
 
 
@@ -33,6 +34,8 @@ public class Menu : MonoBehaviour
         movingScreen = player.GetComponent<MovingScreen>();
         movingScreen.enabled = true;
 
+        shooting = player.GetComponent<Shooting>();
+        shooting.enabled = false;
     }
 
     public void PlayGame()
@@ -44,6 +47,7 @@ public class Menu : MonoBehaviour
         enemySpawning.enabled = true;
         Score.CurrentScore = 0;
         movingScreen.enabled = false;
+        shooting.enabled = true;
 
 
     }
@@ -55,6 +59,7 @@ public class Menu : MonoBehaviour
         playerMovement.enabled = false;
         enemySpawning.enabled = false;
         movingScreen.enabled = true;
+        shooting.enabled = false;
 
     }
     public void Quit()
