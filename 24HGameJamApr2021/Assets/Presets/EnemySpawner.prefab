@@ -45,4 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growthRate: 2
   startTimer: 2
+  spawnLimit: 2
   EnemyPrefab: {fileID: 1137008832855748814, guid: 9da78f8715be51a43af9a974feda0097, type: 3}
+  score: {fileID: 0}
+  always: {fileID: 0}
