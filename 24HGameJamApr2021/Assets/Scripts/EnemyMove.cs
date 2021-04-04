@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
+    public GameObject deatheffectsPrefab;
     public float Speed = 10f;
     public float AimSpeed = 1f;
     public GameObject Player;
@@ -57,7 +58,7 @@ public class EnemyMove : MonoBehaviour
 
     public void DestroyObject()
     {
-        //Spawn deathenemyobject
+        Instantiate(deatheffectsPrefab, transform.position, Quaternion.Euler(0,0,0));
         Destroy(gameObject);
     }   
 
