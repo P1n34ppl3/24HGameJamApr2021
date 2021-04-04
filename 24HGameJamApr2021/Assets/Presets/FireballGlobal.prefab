@@ -10111,7 +10111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 30
   Spawnrate: 5
-  target: {fileID: 3042597561507432968, guid: 1d18e90a2b133c447aaad748438b7184, type: 3}
+  Player: {fileID: 3042597561507432964, guid: 1d18e90a2b133c447aaad748438b7184, type: 3}
 --- !u!114 &217894977658970029
 MonoBehaviour:
   m_ObjectHideFlags: 0
