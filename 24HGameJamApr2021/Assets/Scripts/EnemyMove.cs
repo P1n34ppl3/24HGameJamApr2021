@@ -19,6 +19,9 @@ public class EnemyMove : MonoBehaviour
         OffsettZ = Random.Range(-10.0f, 10.0f);
         rb = GetComponent<Rigidbody>();
         Invoke("Aim",2);
+
+        canvas = GameObject.Find("Canvas");
+        menu = canvas.GetComponent<Menu>();
     }
 
     void Update()
@@ -40,16 +43,17 @@ public class EnemyMove : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 1);
     }
 
-    void OnCollisionEnter(Collision collider)
+    public void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.name == "Player")
         {
-            //menu.Death();
+            menu.Death();
+        }
+        if (collider.gameObject.tag != "Enemy")
+        {
+            Destroy(gameObject);
         }
         
-        Destroy(gameObject);
-    }
-    
-
+    }   
     
 }
