@@ -52,7 +52,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Horn
     clip: {fileID: 8300000, guid: 763d6441c3faeb041a431c352a31b9fc, type: 3}
-    volume: 1
+    volume: 0.05
     pitch: 1
     loop: 0
     source: {fileID: 0}
