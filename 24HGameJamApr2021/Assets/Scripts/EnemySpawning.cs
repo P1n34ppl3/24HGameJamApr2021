@@ -15,9 +15,13 @@ public class EnemySpawning : MonoBehaviour
     int enemiesSpawned = 0;
     int spawnPlace;
     int gateProgression;
+    public Score score;
+    public GameObject always;
 
     void OnEnable()
     {
+        always = GameObject.FindGameObjectWithTag("Always");
+        score = always.GetComponent<Score>();
         enemiesSpawned = 0;
         timeUntillNextSpawn = Convert.ToSingle(startTimer);
         gateProgression = 0;
@@ -34,6 +38,7 @@ public class EnemySpawning : MonoBehaviour
         {
             SpawnEnemy();
             enemiesSpawned += 1;
+            Score.CurrentScore += 1;
             timeUntillNextSpawn = Progression(enemiesSpawned);
             GateProgressor();
         }
