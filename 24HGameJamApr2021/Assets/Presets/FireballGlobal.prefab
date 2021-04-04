@@ -10111,6 +10111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f271b76acaf224db4968aa02b8c6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deatheffectsPrefab: {fileID: 4921589552809820193, guid: fbfb543e0b38eb14cbafe988c15a6f63, type: 3}
   Speed: 5000
   AimSpeed: 1
   Player: {fileID: 3042597561507432964, guid: 1d18e90a2b133c447aaad748438b7184, type: 3}
