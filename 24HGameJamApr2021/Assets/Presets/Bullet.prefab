@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f425a5eba7ebc6447b7e7e3d38f6e082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deatheffectsPrefab: {fileID: 4921589552809820193, guid: fbfb543e0b38eb14cbafe988c15a6f63, type: 3}
   rb: {fileID: 5413882320899148762}
   Speed: 7500
 --- !u!1001 &5199378396181845109
