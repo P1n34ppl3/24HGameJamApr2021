@@ -44,14 +44,14 @@ public class StageMenager : MonoBehaviour
     void Stage3()
     {
         GameObject.FindObjectOfType<AudioManager>().Play("Horn");
-        AnnouncText.text = "The East gate has now been breached!";
+        AnnouncText.text = "The South gate has now been breached!";
         Invoke("clear", 3);
         
     }
     void Stage4()
     {
         GameObject.FindObjectOfType<AudioManager>().Play("Horn");
-        AnnouncText.text = "The East gate has now been breached!";
+        AnnouncText.text = "The North gate has now been breached!";
         Invoke("clear", 3);
        
     }
