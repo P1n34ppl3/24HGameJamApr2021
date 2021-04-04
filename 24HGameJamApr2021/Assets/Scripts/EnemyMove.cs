@@ -60,5 +60,7 @@ public class EnemyMove : MonoBehaviour
         //Spawn deathenemyobject
         Destroy(gameObject);
     }   
+
+
     
 }

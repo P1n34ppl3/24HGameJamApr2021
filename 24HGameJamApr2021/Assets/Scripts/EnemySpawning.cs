@@ -77,7 +77,7 @@ public class EnemySpawning : MonoBehaviour
         switch (gateProgression)
         {
             case 0:
-                spawnPlace = 3;
+                spawnPlace = 2;
                 break;
             case 1:
                 spawnPlace = UnityEngine.Random.Range(2,4);
