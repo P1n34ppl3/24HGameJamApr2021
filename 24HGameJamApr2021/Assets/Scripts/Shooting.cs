@@ -12,10 +12,6 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("shoot");
-            Debug.Log(PPosition.position);
-            Debug.Log(PPosition.rotation);
-
             Instantiate(BulletPrefab, PPosition.position, PPosition.rotation);
         }
     }
@@ -28,9 +24,6 @@ public class Shooting : MonoBehaviour
     }
     void Shoot()
     {
-        Debug.Log("shoot");
-            Instantiate(BulletPrefab, PPosition.position, PPosition.rotation);
-        
-           
+        Instantiate(BulletPrefab, PPosition.position, PPosition.rotation);   
     }
 }
