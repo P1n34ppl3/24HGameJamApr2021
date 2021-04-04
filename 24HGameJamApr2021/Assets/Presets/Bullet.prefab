@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f425a5eba7ebc6447b7e7e3d38f6e082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 5413882320899148762}
   Speed: 5000
 --- !u!1001 &5199378396181845109
 PrefabInstance:
@@ -74,5 +75,10 @@ PrefabInstance:
 --- !u!1 &5179298558038992059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1137008832855748814, guid: 9da78f8715be51a43af9a974feda0097, type: 3}
+  m_PrefabInstance: {fileID: 5199378396181845109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &5413882320899148762 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 217894977658970031, guid: 9da78f8715be51a43af9a974feda0097, type: 3}
   m_PrefabInstance: {fileID: 5199378396181845109}
   m_PrefabAsset: {fileID: 0}
