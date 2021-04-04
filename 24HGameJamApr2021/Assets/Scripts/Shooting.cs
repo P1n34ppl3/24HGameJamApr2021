@@ -13,7 +13,7 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) & reload == 0)
         {
-            Instantiate(BulletPrefab, PPosition.position, PPosition.rotation);
+            Instantiate(BulletPrefab, PPosition.position + 3*transform.forward + new Vector3(0,1,0) , PPosition.rotation);
             reload = 1;
             Invoke("Shoot", ReloadTime);
         }
