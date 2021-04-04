@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public GameObject deatheffectsPrefab;
     public Rigidbody rb;
     public float Speed = 10f;
 
@@ -24,6 +25,7 @@ public class Bullet : MonoBehaviour
         }
         if (collider.gameObject.name != "Player") 
         {
+            Instantiate(deatheffectsPrefab, transform.position, Quaternion.Euler(0,0,0));
             Destroy(gameObject);
         }
     }
