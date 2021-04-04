@@ -9997,7 +9997,7 @@ GameObject:
   - component: {fileID: 6522848999578680709}
   m_Layer: 0
   m_Name: FireballGlobal
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10113,6 +10113,8 @@ MonoBehaviour:
   Speed: 30
   Spawnrate: 5
   Player: {fileID: 3042597561507432964, guid: 1d18e90a2b133c447aaad748438b7184, type: 3}
+  canvas: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!114 &217894977658970029
 MonoBehaviour:
   m_ObjectHideFlags: 0

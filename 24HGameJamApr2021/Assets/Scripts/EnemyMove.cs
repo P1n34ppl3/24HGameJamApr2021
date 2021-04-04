@@ -46,8 +46,8 @@ public class EnemyMove : MonoBehaviour
         {
             //menu.Death();
         }
+        
         Destroy(gameObject);
-
     }
     
 
