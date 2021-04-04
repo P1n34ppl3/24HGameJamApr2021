@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMove : MonoBehaviour
 {
     public float Speed = 10f;
-    public float Spawnrate = 5f;
+    public float AimSpeed = 1f;
     public GameObject Player;
     public GameObject canvas;
     public Menu menu;
@@ -18,7 +18,7 @@ public class EnemyMove : MonoBehaviour
         OffsettX = Random.Range(-10.0f, 10.0f);
         OffsettZ = Random.Range(-10.0f, 10.0f);
         rb = GetComponent<Rigidbody>();
-        Invoke("Aim",2);
+        Invoke("Aim", AimSpeed);
 
         canvas = GameObject.Find("Canvas");
         menu = canvas.GetComponent<Menu>();

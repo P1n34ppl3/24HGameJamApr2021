@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
             print(Score.CurrentScore);
             print("score goes up");
         }
-        if (collider.gameObject.name != "Player")
+        if (collider.gameObject.name != "Player" & collider.gameObject.name != "Enemy")
         {
             Destroy(gameObject);
         }

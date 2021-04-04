@@ -61,13 +61,13 @@ public class EnemySpawning : MonoBehaviour
         switch (enemiesSpawned)
             {
                 case 10:
-                    enemiesSpawned = 1;
+                    gateProgression = 1;
                     break;
                 case 20:
-                    enemiesSpawned = 2;
+                    gateProgression = 2;
                     break;
                 case 30:
-                    enemiesSpawned = 3;
+                    gateProgression = 3;
                     break;
             }
     }
@@ -94,19 +94,19 @@ public class EnemySpawning : MonoBehaviour
         {
             case 0:
                 position = new Vector3(0,5,-60);
-                yRotation = UnityEngine.Random.Range(-60, 60);
+                yRotation = UnityEngine.Random.Range(-80, 80);
                 break;
             case 1:
                 position = new Vector3(0,5,60);
-                yRotation = UnityEngine.Random.Range(120, 240);
+                yRotation = UnityEngine.Random.Range(100, 260);
                 break;
             case 2:
                 position = new Vector3(-60,5,0);
-                yRotation = UnityEngine.Random.Range(30, 150);
+                yRotation = UnityEngine.Random.Range(10, 170);
                 break;
             case 3:
                 position = new Vector3(60,5,0);
-                yRotation = UnityEngine.Random.Range(-150, -30);
+                yRotation = UnityEngine.Random.Range(-170, -10);
                 break;
         }
 
