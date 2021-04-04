@@ -1,18 +1,95 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class EnemySpawning : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public double growthRate;
+    public double startTimer;
+    public float spawnLimit;
+    public GameObject EnemyPrefab;
+    bool random;
+    Vector3 position;
+    float yRotation;
+    float timeUntillNextSpawn;
+    int enemiesSpawned = 0;
+
+    void OnEnable()
     {
-        
+        enemiesSpawned = 0;
+        timeUntillNextSpawn = Convert.ToSingle(startTimer);
+        random = false;
+        SpawnEnemy();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (timeUntillNextSpawn > 0)
+        {
+            timeUntillNextSpawn -= Time.deltaTime;
+        }
+        else
+        {
+            SpawnEnemy();
+            enemiesSpawned += 1;
+            timeUntillNextSpawn = Progression(enemiesSpawned);
+            if (enemiesSpawned == 10)
+            {
+                random = true;
+            }
+        }
     }
+    float Progression(int x)
+    {
+        double result = startTimer * Math.Pow(growthRate, -x);
+        if (result > spawnLimit)
+        {
+            return Convert.ToSingle(result);
+        }
+        else
+        {
+            return spawnLimit;
+        }
+    }
+
+    void SpawnEnemy()
+    {   
+        int spawnPlace;
+        if (random)
+        {
+            spawnPlace = UnityEngine.Random.Range(0,4);
+        }
+        else
+        {
+            spawnPlace = 3;
+        }
+
+        switch (spawnPlace)
+        {
+            case 0:
+                position = new Vector3(0,5,-60);
+                yRotation = UnityEngine.Random.Range(-60, 60);
+                break;
+            case 1:
+                position = new Vector3(0,5,60);
+                yRotation = UnityEngine.Random.Range(120, 240);
+                break;
+            case 2:
+                position = new Vector3(-60,5,0);
+                yRotation = UnityEngine.Random.Range(30, 150);
+                break;
+            case 3:
+                position = new Vector3(60,5,0);
+                yRotation = UnityEngine.Random.Range(-150, -30);
+                break;
+        }
+
+        Quaternion rotation = Quaternion.Euler(0, yRotation, 0);
+
+        Instantiate(EnemyPrefab, position, rotation);
+
+    }
+
+
 }
